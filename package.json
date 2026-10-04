@@ -1,0 +1,30 @@
+{
+  "name": "poc-saga-circuit-breaker",
+  "version": "1.0.0",
+  "private": true,
+  "description": "PoC: Saga Pattern (orchestration) and Circuit Breaker across four e-commerce microservices",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "turbo run dev",
+    "lint": "turbo run lint",
+    "typecheck": "turbo run typecheck",
+    "test": "turbo run test",
+    "report:docx": "node scripts/report-docx.mjs"
+  },
+  "devDependencies": {
+    "turbo": "^2.10.9",
+    "typescript": "^5.7.2"
+  },
+  "packageManager": "npm@11.16.0",
+  "engines": {
+    "node": ">=22"
+  },
+  "allowScripts": {
+    "esbuild@0.28.2": true,
+    "sharp@0.35.5": true,
+    "unrs-resolver@1.12.2": true
+  }
+}

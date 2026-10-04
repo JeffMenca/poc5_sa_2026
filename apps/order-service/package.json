@@ -1,0 +1,29 @@
+{
+  "name": "@poc5/order-service",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch --env-file-if-exists=../../.env --clear-screen=false src/server.ts",
+    "start": "tsx --env-file-if-exists=../../.env src/server.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@poc5/contracts": "*",
+    "@poc5/service-kit": "*",
+    "express": "^5.2.1",
+    "tsx": "^4.19.2",
+    "zod": "^4.1.0",
+    "mollitia": "^0.2.0"
+  },
+  "devDependencies": {
+    "@poc5/inventory-service": "*",
+    "@poc5/payment-service": "*",
+    "@poc5/shipping-service": "*",
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.10.2",
+    "typescript": "^5.7.2",
+    "vitest": "^4.1.10"
+  }
+}
